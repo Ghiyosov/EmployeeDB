@@ -72,7 +72,7 @@ class Program
         employee.Position = Console.ReadLine();
 
         Console.Write("Введите отдел: ");
-        employee.Deoartment = Console.ReadLine();
+        employee.Department = Console.ReadLine();
 
         Console.Write("Введите дату приема на работу (гггг-мм-дд): ");
         employee.HireDate = DateTime.Parse(Console.ReadLine());
@@ -106,7 +106,7 @@ class Program
             Console.WriteLine($"Фамилия: {employee.LastName}");
             Console.WriteLine($"Дата рождения: {employee.DateOfBirth:yyyy-MM-dd}");
             Console.WriteLine($"Должность: {employee.Position}");
-            Console.WriteLine($"Отдел: {employee.Deoartment}");
+            Console.WriteLine($"Отдел: {employee.Department}");
             Console.WriteLine($"Дата приема на работу: {employee.HireDate:yyyy-MM-dd}");
             Console.WriteLine($"Зарплата: {employee.Salary:C}");
             Console.WriteLine($"Активен: {(employee.IsActive ? "Да" : "Нет")}");
@@ -166,8 +166,8 @@ class Program
             Console.Write($"Должность ({employee.Position}): ");
             employee.Position = Console.ReadLine() ?? employee.Position;
 
-            Console.Write($"Отдел ({employee.Deoartment}): ");
-            employee.Deoartment = Console.ReadLine() ?? employee.Deoartment;
+            Console.Write($"Отдел ({employee.Department}): ");
+            employee.Department = Console.ReadLine() ?? employee.Department;
 
             Console.Write($"Зарплата ({employee.Salary:C}): ");
             var salary = Console.ReadLine();
